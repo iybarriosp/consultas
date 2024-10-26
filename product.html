@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- menu -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div>
+                    <a href="index.html" class="logo"><img src="img/logo.png" width="150px" height="70px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <div class="icons">
+                                <a href="account.html"><i class="fa-regular fa-user"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <form class="d-flex">
+                                <div class="icons">
+                                    <div class="carrito">
+                                        <i  class="fa-solid fa-cart-shopping"></i>
+                                        <span class="contar-pro">0</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <table class="table list-cart">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- aqui va la info del producto -->
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="4" class="text-center">
+                              <button type="button" class="btn-cart btn btn-primary">Ver Carrito</button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- single product details -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/gallery-1.jpg" width="100%" id="ProductImg" alt="">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="img/gallery-1.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/gallery-2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/gallery-3.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/gallery-4.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / T-Shirt</p>
+                <h1>Red Printd T-Shirt by HRX</h1>
+                <h4>$50.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="#" class="btn">Add To Cart</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veniam nesciunt velit, modi fugiat aspernatur iure recusandae quisquam.</p>
+            </div>
+        </div>
+    </div>
+    <!-- title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <button class="btn">View More</button>
+        </div>
+    </div>
+    <!-- product -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <a href="pantalonetaverdeos.html"><img src="img/pantaloneta verde oscura.webp" alt=""></a>
+                <h4>Pantaloneta Verde Oscuro</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$70.00</p>
+            </div>
+            <div class="col-4">
+                <a href="sudaderaazul.html"><img src="img/sudadera azul oscura.webp" alt=""></a>
+                <h4>Sudadera Azul</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <a href="camisetalogorojo.html"><img src="img/camiseta logo rojo.webp" alt=""></a>
+                <h4>Camiseta Negro</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$60.00</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Downloand Our App</h3>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html" class="logo"><img src="img/logo.png" width="200px" height="100px" alt=""></a>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <a href="#"><li>Coupons</li></a>
+                        <a href="#"><li>Blog Post</li></a>
+                        <a href="#"><li>Return Policy</li></a>
+                        <a href="#"><li>Join Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4"><br>
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li class="facebook"><a href="#"><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
+                        <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i>  Twitter</a></li>
+                        <li class="instagram"><a href="#"><i class="fa-brands fa-instagram"></i>  Instragram</a></li>
+                        <li class="google"><a href="#"><i class="fa-brands fa-google"></i>  Google</a></li>
+                        <li class="whatsapp"><a href="#"><i class="fa-brands fa-whatsapp"></i>  Whatsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - NoxFort</p>
+        </div>
+    </div>
+    <!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else 
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- js for product gallery -->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+    </script>
+</body>
+</html>

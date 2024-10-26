@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport JANN</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- bootstrap links -->
+</head>
+<body>
+    <!-- menu -->
+    <div class="header1">
+        <div class="container1">
+            <div class="navbar1">
+                <div>
+                    <a href="index.html" class="logo1"><img src="img/logo.png" width="150px" height="70px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <div class="icons">
+                                <a href="account.html"><i class="fa-regular fa-user"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <form class="d-flex">
+                                <div class="icons">
+                                    <div class="carrito">
+                                        <i  class="fa-solid fa-cart-shopping"></i>
+                                        <span class="contar-pro">0</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <table class="table list-cart">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- aqui va la info del producto -->
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="4" class="text-center">
+                              <button type="button" class="btn-cart btn btn-primary">Ver Carrito</button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- cart section -->
+    <h2 class="page-title text-center my-5 py-3" style="background-color: rgb(226, 40, 7)">Checkout</h2>
+    <div class="page-content">  
+       <section class="pt-80 pb-40">
+           <div class="container-fluid">
+               <form class="formulario" id="checkout-form">
+                   <div class="row">
+                       <div class="col-lg-8 mb-64 mb-lg-0 px-5">
+                           <h5 class="mb-32">DATOS DE ENTREGA</h5>
+                           <div class="row">
+                               <div class="col-sm-6">
+                                    <div class="form-group mb-32">
+                                       <label>Nombres</label>
+                                       <input type="text" class="f-name" autocomplete="off" placeholder="Sr. Felipe">
+                                   <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                               </div>
+                               <div class="col-sm-6">
+                                    <div class="form-group mb-32">
+                                       <label>Apellidos</label>
+                                       <input type="text" class="l-name" autocomplete="off" placeholder="Perez">
+                                   </div>
+                               </div>
+                               <div class="col-sm-6">
+                                   <div class="form-group mb-32">
+                                       <label>Email</label>
+                                       <input type="email" class="email" autocomplete="off" placeholder="email@example.com">
+                                   </div>
+                               </div>
+                               <div class="col-sm-6">
+                                   <div class="form-group mb-32">
+                                       <label>Celular</label>
+                                       <input type="tel" class="phone" autocomplete="off" placeholder="12345679">
+                                   </div>
+                               </div>
+                               <div class="col-12">
+                                   <div class="form-group mb-32">
+                                       <label>Direccion</label>
+                                       <input type="text" class="address" autocomplete="off" placeholder="Your Address">
+                                   </div>
+                               </div>
+                               <div class="col-12">
+                                   <div class="form-group mb-32">
+                                       <label>Direccion (optional)</label>
+                                       <input type="text" class="address2" autocomplete="off" placeholder="Apartment, Suite, Unit etc.">
+                                   </div>
+                               </div>
+                           </div> 
+                           <div class="mt-64">
+                               <h5 class="mb-32">INFORMACION ADICIONAL</h5>
+                               <div class="form-group">
+                                   <label>Notas de orden (opcional)</label>
+                                   <textarea class="noe" id="additiona-note" rows="5" placeholder="Note About Your Order, e.g. special notes for delivery."></textarea>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-lg-4 ">
+                           <div class="cart-summary">
+                               <h6 class="title mb-24">RESUMEN DE ORDEN</h6>
+                               <div class="cart-summary-detail mb-24">
+                                   <!-- <div class="d-flex justify-content-between align-items-center mb-24">
+                                       <p class="lead color-black">Crunch Burger</p>
+                                       <p class="lead">$560.00</p>
+                                   </div>
+                                   <div class="d-flex justify-content-between align-items-center mb-24">
+                                       <p class="lead color-black">Sizzle Snap Burger</p>
+                                       <p class="lead">$280.00</p>
+                                   </div> -->
+                                   <div class="d-flex justify-content-between align-items-center mb-24">
+                                       <p class="lead color-black">VALOR DOMICILIO</p>
+                                       <p class="lead">$0</p>
+                                   </div>
+                                   <div class="d-flex justify-content-between align-items-center mb-24">
+                                       <p class="lead color-black">DESCUENTO PROMO</p>
+                                       <p class="lead">$0</p>
+                                   </div>
+                                   <div class="d-flex justify-content-between align-items-center mb-32">
+                                       <p class="lead color-black">SUBTOTAL</p>
+                                       <p class="lead color-black">$0</p>
+                                   </div>
+                               </div>
+                               <div class="d-flex justify-content-between align-items-center mb-32">
+                                   <h5 class="color-primary">TOTAL</h5>
+                                   <h5 id="total" class="color-primary">$0</h5>
+                               </div>
+                               <div class="payment-method mb-24">
+                                   <ul class="unstyled">
+                                       <li>
+                                           <label class="lead" for="cod">
+                                             <input id="cod" type="radio" name="radio" class="radio" value="1" checked="checked">  Contraentrga + 5%</label>
+                                       </li>
+                                       <li>
+                                           <label class="lead" for="cp">
+                                             <input id="cp" type="radio" name="radio" class="radio" value="2">  PSE</label>
+                                       </li>
+                                       <li>
+                                           <label class="lead" for="bt">
+                                             <input id="bt" type="radio" name="radio" class="radio" value="3">  Transferencia</label>
+                                       </li>
+                                   </ul>
+                               </div>
+                               <button type="submit" onclick="saveFormData()" class="btn-cart btn btn-primary">
+                                   Comprar
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+               </form>
+           </div>
+
+       </section>
+
+    </div>
+    <!-- cart section -->
+    <!-- footer -->
+    <div class="footer1">
+        <div class="container1">
+            <div class="row">
+                <div class="footer1-col-1">
+                    <h3>Downloand Our App</h3>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                    <div class="app-logo1">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer1-col-2">
+                    <a href="index.html" class="logo"><img src="img/logo.png" width="200px" height="100px" alt=""></a>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer1-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer1-col-4"><br>
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li class="facebook"><a href="#"><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
+                        <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i>  Twitter</a></li>
+                        <li class="instagram"><a href="#"><i class="fa-brands fa-instagram"></i>  Instragram</a></li>
+                        <li class="google"><a href="#"><i class="fa-brands fa-google"></i>  Google</a></li>
+                        <li class="whatsapp"><a href="#"><i class="fa-brands fa-whatsapp"></i>  Whatsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - NoxFort</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- SweetAlert2 desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

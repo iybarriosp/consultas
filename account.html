@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- menu -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div>
+                    <a href="index.html" class="logo"><img src="img/logo.png" width="150px" height="70px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <div class="icons">
+                                <a href="account.html"><i class="fa-regular fa-user"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <form class="d-flex">
+                                <div class="icons">
+                                    <div class="carrito">
+                                        <i  class="fa-solid fa-cart-shopping"></i>
+                                        <span class="contar-pro">0</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                    <table class="table list-cart">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- aqui va la info del producto -->
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="4" class="text-center">
+                              <button type="button" class="btn-cart btn btn-primary">Ver Carrito</button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- account - page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/image1.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-bnt">
+                            <span onclick="Login()">Login</span>
+                            <span onclick="Register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username" id="loginUsername">
+                            <input type="password" placeholder="Password" id="loginPassword">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+                        <form id="RegisterForm">
+                            <input type="text" placeholder="Username" id="registerUsername">
+                            <input type="email" placeholder="Email" id="registerEmail">
+                            <input type="password" placeholder="Password" id="registerPassword">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html" class="logo"><img src="img/logo.png" width="200px" height="100px" alt=""></a>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4"><br>
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li class="facebook"><a href="#"><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
+                        <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i>  Twitter</a></li>
+                        <li class="instagram"><a href="#"><i class="fa-brands fa-instagram"></i>  Instagram</a></li>
+                        <li class="google"><a href="#"><i class="fa-brands fa-google"></i>  Google</a></li>
+                        <li class="whatsapp"><a href="#"><i class="fa-brands fa-whatsapp"></i>  Whatsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - NoxFort</p>
+        </div>
+    </div>
+    <!-- js for toggle menu -->
+    <script src="js/auth.js"></script>
+    <script src="js/menu.js"></script>
+    <!-- js for toggle form -->
+    <script src="js/form.js"></script>
+</body>
+</html>
